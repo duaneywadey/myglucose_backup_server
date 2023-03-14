@@ -303,7 +303,8 @@ def doctorOnly(request, user_id):
 	print(profile_data)
 
 	context = {
-		'profile_data':profile_data
+		'profile_data':profile_data,
+		'user':user
 	}
 	return render(request, 'dashboard/doctorinfo.html', context)	
 
@@ -429,4 +430,3 @@ class GeneratePdf(View):
 # Getting all members in a group 
 
 # users = User.objects.filter(groups__name='group_name')
-
