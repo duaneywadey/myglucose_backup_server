@@ -41,4 +41,4 @@ class DoctorUserUpdateForm(forms.ModelForm):
 class DoctorProfileUpdateForm(forms.ModelForm):
 	class Meta:
 		model = DoctorModel
-		fields = ['profileAge', 'sex', 'firstName', 'lastName', 'address', 'phoneNum', 'shortDesc', 'avatar']
+		fields = ['profileAge', 'sex', 'firstName', 'lastName', 'address', 'phoneNum', 'shortDesc']

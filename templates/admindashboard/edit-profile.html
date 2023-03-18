@@ -16,7 +16,7 @@
           <h2>Doctor's Profile</h2>
         </div>
         <div class="card-body">
-          <img src="{{ request.user.doctorprofile.avatar.url }}" class="rounded mx-auto d-block" style="max-width: 70%;">
+          <img src="{% static 'default/doctor.png' %}" class="rounded mx-auto d-block" style="max-width: 70%;">
           <div class="text-center mt-4">
             <h4>{{request.user.doctorprofile.firstName}}</h4>
             <h4>{{request.user.doctorprofile.sex}}, {{request.user.doctorprofile.profileAge}}</h4>

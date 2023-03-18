@@ -16,7 +16,7 @@
           </div>
           {% for p in profile_data %}
           <div class="card-body">
-            <img src="{{ user.doctorprofile.avatar.url }}" class="rounded mx-auto d-block" style="max-width: 75%;">
+            <img src="{% static 'default/doctor.png' %}" class="rounded mx-auto d-block" style="max-width: 75%;">
             <div class="text-center mt-4">
               <h4>{{p.firstName}} {{p.lastName}}</h4>
               <h4>{{p.sex}}, {{p.profileAge}}</h4>
