@@ -25,19 +25,19 @@
               	{% csrf_token %}
                 <div class="col-12">
                   <label for="inputNanme4" class="form-label">Height (in meters)</label>
-                  <input type="number" class="form-control" id="height" name="height">
+                  <input type="text" class="form-control" id="height" name="height">
                 </div>
                 <div class="col-12">
                   <label for="inputEmail4" class="form-label">Weight (in Kg)</label>
-                  <input type="number" class="form-control" id="weight" name="weight">
+                  <input type="text" class="form-control" id="weight" name="weight">
                 </div>
                 <div class="col-12">
                   <label for="inputEmail4" class="form-label">Age</label>
-                  <input type="number" class="form-control" id="age" name="age">
+                  <input type="text" class="form-control" id="age" name="age">
                 </div>
                 <div class="col-12">
                   <label for="inputPassword4" class="form-label">DPF</label>
-                  <input type="number" class="form-control" id="dpf" name="dpf">
+                  <input type="text" class="form-control" id="dpf" name="dpf">
                 </div>
                 <div class="col-12">
                   <div class="form-check mt-4">
@@ -74,8 +74,8 @@
           <div class="row">
             <div class="col-md-6">
               
-              <input type="number" class="form-control" id="ageinmodal" oninput="ageToDPF()">
-              <input type="number" class="form-control mt-2" id="dpfvalue">
+              <input type="text" class="form-control" id="ageinmodal" oninput="ageToDPF()">
+              <input type="text" class="form-control mt-2" id="dpfvalue">
               <button class="btn btn-primary" onClick="copyToClipboard()">Copy DPF</button>                                     
             </div>
           </div>     
